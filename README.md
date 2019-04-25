@@ -1,2 +1,3 @@
 # Portfolio
-My first portfolio
+
+Done using HTML5/CSS and a little of jQuery.
