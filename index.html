@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Portfolio | DChmiel | Web Design</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon"  href="favicon.ico">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+       <div class="scroll-top"><a href="#navigation"><i class="fas fa-arrow-up"></i> TOP</a></div>
+        <nav id="navigation" class="nav">
+            <ul>
+                <li><a href="#sec1"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#sec2"><i class="fas fa-info-circle"></i> About me</a></li>
+                <li><a href="#sec3"><i class="fas fa-cogs"></i> Projects</a></li>
+                <li><a href="#sec4"><i class="far fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+       
+        <section id="sec1">
+            <div class="logo">Damian Chmiel<br>
+               <div><i class="fas fa-code"></i>Portfolio<i class="fas fa-code"></i></div> 
+            </div>
+        </section>
+        
+        <section id="sec2">
+            <div class="skill-container">
+                <div  id="skill-2" class=" box box1  skill-2 skill-2-transform">
+                        <div class="skill">Front-end</div>
+                        <script>
+                            $('#skill-2').click(function () {
+                            $('#skill-1').toggleClass('skill-1-transform');
+                            $('#skill-3').toggleClass('skill-3-transform');
+                            $('#skill-4').toggleClass('skill-4-transform');
+                            $('#skill-5').toggleClass('skill-5-transform');
+                            $('#skill-2').toggleClass('skill-active-2');
+                            $('#skill-tree-start').toggleClass('skill-tree-start-transform');
+                                                            });
+                        </script>
+                </div>
+               
+                <div id="skill-3" class=" box box2 skill-3 skill-3-transform">
+                        <div  class="skill">Back-end</div>
+                        <script>
+                        $('#skill-3').click(function () {
+                            $('#skill-1').toggleClass('skill-1-transform');
+                            $('#skill-2').toggleClass('skill-2-transform');
+                            $('#skill-4').toggleClass('skill-4-transform');
+                            $('#skill-5').toggleClass('skill-5-transform');
+                            $('#skill-3').toggleClass('skill-active-3');
+                            $('#skill-tree-start').toggleClass('skill-tree-start-transform');
+                                                        });
+                        </script>
+                </div>
+
+                <div class="box3">
+                        <div id="skill-tree-start" class="skill-tree-start">Click me!
+                        <script>
+                            $('#skill-tree-start').click(function () {
+                                $('#skill-1').toggleClass('skill-1-transform');
+                                $('#skill-2').toggleClass('skill-2-transform');
+                                $('#skill-3').toggleClass('skill-3-transform');
+                                $('#skill-4').toggleClass('skill-4-transform');
+                                $('#skill-5').toggleClass('skill-5-transform');
+                                                                    });         
+                        </script>
+                                </div>
+                </div>
+
+                <div id="skill-1" class="box4 skill-1 skill-1-transform">
+                        <div class="skill">Languages</div>
+                        <script>
+                            $('#skill-1').click(function () {
+                                $('#skill-4').toggleClass('skill-4-transform');
+                                $('#skill-2').toggleClass('skill-2-transform');
+                                $('#skill-3').toggleClass('skill-3-transform');
+                                $('#skill-5').toggleClass('skill-5-transform');
+                                $('#skill-1').toggleClass('skill-active-1');
+                                $('#skill-tree-start').toggleClass('skill-tree-start-transform');
+                                                            });
+                        </script>
+                </div>
+
+                <div id="skill-4" class="box5  skill-4 skill-4-transform">
+                        <div class="skill">Soft skills</div>
+                        <script>
+                            $('#skill-4').click(function () {
+                                $('#skill-1').toggleClass('skill-1-transform');
+                                $('#skill-2').toggleClass('skill-2-transform');
+                                $('#skill-3').toggleClass('skill-3-transform');
+                                $('#skill-5').toggleClass('skill-5-transform');
+                                $('#skill-4').toggleClass('skill-active-4');
+                                $('#skill-tree-start').toggleClass('skill-tree-start-transform');
+                                                            });
+                         </script>
+                </div>
+
+                <div  id="skill-5" class="box6  skill-5 skill-5-transform">
+                        
+                        
+                        <div class="skill-child small"><a href="#">CV</a></div>
+                        <div class="skill">About me</div>
+                        <div class="skill-child small">CV</div>
+                        <script>
+                            $('#skill-5').click(function () {
+                                $('#skill-1').toggleClass('skill-1-transform');
+                                $('.skill-child').toggleClass('small');
+                                $('#skill-2').toggleClass('skill-2-transform');
+                                $('#skill-4').toggleClass('skill-3-transform');
+                                $('#skill-3').toggleClass('skill-4-transform');
+                                $('#skill-5').toggleClass('skill-active-5');
+                                $('#skill-tree-start').toggleClass('skill-tree-start-transform');
+                                                            });
+                        </script>
+                </div>
+               
+            </div>
+        </section>
+        
+        <section id="sec3">
+            <h1 class="title">My projects</h1>
+            <div id="pro1" class="project-thumbnail"><a href="http://www.damianchmiel.pl/starwars/index.html"><div class="project-title">Star wars</div></a></div>
+            <div class="project-thumbnail"><a href="#sec2"><div class="project-title">project-2</div></a></div>
+            <div class="project-thumbnail"><a href="#"><div class="project-title">project-3</div></a></div>
+            <div class="project-thumbnail"><a href="#"><div class="project-title">project-4</div></a></div>
+            <div class="project-thumbnail"><a href="#"><div class="project-title">project-5</div></a></div>
+            <div class="project-thumbnail"><a href="#"><div class="project-title">project-6</div></a></div>
+        </section>
+        
+        <section id="sec4">
+            <h1 class="title">Contact</h1>
+            <div id="email" class="contact"><a href="mailto:damian.chmiel.1991@gmail.com"><i class="far fa-envelope"></i></a></div>
+            <div id="github" class="contact"><a href="https://github.com/Damki123"><i class="fab fa-github"></i></a></div>
+            <div id="linkedin" class="contact"><a href="https://www.linkedin.com/in/damian-chmiel-797893182/"><i class="fab fa-linkedin-in"></i></a></div>
+        </section>
+        
+        <div class="footer"><p>&copy Created by Damian Chmiel 2019</p></div>
+    </div>
+  <script src="smoothscroll.js"></script>
+</body>
+</html>
